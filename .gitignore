@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# .vs
+*/.vs
+*/*/.vs
+
+# Debug
+*/Debug/
+*/*/Debug/
+*/*/*/Debug/
+
+# etc
+*.hwp
