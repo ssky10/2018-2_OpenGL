@@ -5,7 +5,7 @@ int projection();
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
-	culling();
-	//projection();
+	//culling();
+	projection();
 	return 0;
 }

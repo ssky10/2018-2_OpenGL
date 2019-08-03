@@ -4,6 +4,7 @@
 void MyDisplay1() {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 	glPushMatrix();
 	glColor3f(0.0, 0.0, 0.0);
 	glutSolidTeapot(0.1);
