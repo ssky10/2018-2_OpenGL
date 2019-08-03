@@ -17,7 +17,7 @@ GLfloat MyPlane110[] = { 1.5,1.5,0.0,0.0 };
 GLfloat MyPlane101[] = { 1.5,0.0,1.5,0.0 };
 GLfloat Rx = 0.0, Ry = 0.0, Rz = 0.0;
 
-void FillMyTextureCheck() {
+void FillMyTextureCheck2() {
 	int s, t;
 	for (s = 0; s < WIDTH; s++) {
 		for (t = 0; t < HEIGHT; t++) {
@@ -39,7 +39,7 @@ void MyInit() {
 	glEnable(GL_DEPTH_TEST);
 	glShadeModel(GL_SMOOTH);
 
-	FillMyTextureCheck();
+	FillMyTextureCheck2();
 
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, WIDTH, HEIGHT, 0, GL_RGB,
 		GL_UNSIGNED_BYTE, MyTexture);
@@ -70,7 +70,7 @@ void MyReshape(int w, int h) {
 	glTranslatef(0.0, 0.0, -1.0);
 }
 
-void MyDisplay() {
+void MyDisplay2() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glPushMatrix();
 	glRotatef(Rx, 1.0, 0.0, 0.0);
@@ -98,7 +98,7 @@ int AutoTexture2D() {
 	glutCreateWindow("Auto Texture Mapping");
 	glutKeyboardFunc(DoKeyboard);
 	glutReshapeFunc(MyReshape);
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay2);
 	MyInit();
 	glutMainLoop();
 	return 0;

@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include "opengl/glut.h"
 
-void MyDisplay() {
+void MyDisplay2() {
 	GLdouble eqn1[4] = { 0.0,1.0,0.0,0.0 };
 	GLdouble eqn1_1[4] = { 0.0,1.0,0.0,0.5 };
 	GLdouble eqn2[4] = { -1.0,0.0,0.0,0.0 };
@@ -102,7 +102,7 @@ int ClipPlane() {
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Clip Plane");
 	glClearColor(0.0, 0.0, 0.0, 0.0);
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay2);
 	glutReshapeFunc(MyReshape);
 	glutMainLoop();
 	return 0;

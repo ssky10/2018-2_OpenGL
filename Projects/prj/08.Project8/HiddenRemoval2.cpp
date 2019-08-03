@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include "opengl/glut.h"
 
-void MyDisplay() {
+void MyDisplay2() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
@@ -39,7 +39,7 @@ int HiddenRemoval2() {
 	//glOrtho(-1.0, 1.0, -1.0, 1.0, 1.0, -1.0);
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
 
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay2);
 	glutMainLoop();
 	return 0;
 }

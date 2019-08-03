@@ -6,7 +6,7 @@
 
 GLubyte MyTexture[WIDTH][HEIGHT][3];
 
-void FillMyTextureCheck() {
+void FillMyTextureCheck1() {
 	int s, t;
 	for (s = 0; s < WIDTH; s++) {
 		for (t = 0; t < HEIGHT; t++) {
@@ -19,7 +19,7 @@ void FillMyTextureCheck() {
 }
 
 void MyTextureInit() {
-	FillMyTextureCheck();
+	FillMyTextureCheck1();
 
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, WIDTH, HEIGHT, 0, GL_RGB,
 		GL_UNSIGNED_BYTE, MyTexture);
@@ -31,7 +31,7 @@ void MyTextureInit() {
 	glEnable(GL_TEXTURE_2D);
 }
 
-void MyDisplay() {
+void MyDisplay1() {
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	glBegin(GL_QUADS);
@@ -60,7 +60,7 @@ int ManualTexture() {
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutCreateWindow("Manual Texture Mapping");
 	MyTextureInit();
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay1);
 	glutMainLoop();
 	return 0;
 }

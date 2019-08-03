@@ -49,15 +49,16 @@ void MyKeyboard(unsigned char KeyPressed, int X, int Y) {
 	glutPostRedisplay();
 }
 
-int main() {
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
 	glutCreateWindow("Keyboard Callback");
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glColor3f(0.5, 0.5, 0.5);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
-	glutDisplayFunc(MyDisplay);
 	glutKeyboardFunc(MyKeyboard);
+	glutDisplayFunc(MyDisplay);
 	glutMainLoop();
 	return 0;
 }

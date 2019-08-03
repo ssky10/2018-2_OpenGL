@@ -632,20 +632,19 @@ void endGame() {
 	stage_user[2] = '-';
 	stage_user[3] = '-';
 	stage_user[4] = '-';
-	stage_user[5] = '-';
 
 	stage_computer[0] = '-';
 	stage_computer[1] = '-';
 	stage_computer[2] = '-';
 	stage_computer[3] = '-';
 	stage_computer[4] = '-';
-	stage_computer[5] = '-';
 
 	try_num = 0;
 	score = 0;
 }
 
 int main(int argc, char** argv) {
+	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);//디스플레이 모드 설정
 	glutInitWindowSize(800, 800);//윈도우 크기 설정
 	glutInitWindowPosition(0, 0);//윈도우 초기 위치 설정

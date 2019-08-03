@@ -155,7 +155,8 @@ void DoDisplay_FollowMove() {
 	glFlush();
 }
 
-int main() {
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
 	glutCreateWindow("OpenGL");
 	glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH);
 	MyLightInit();

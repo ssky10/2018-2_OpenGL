@@ -40,24 +40,25 @@ void MyDisplay() {
 	//glTranslatef(0.5, 0.0, 0.0);
 	//glScalef(0.5, 1.0, 1.0);
 
-	//추가
-	glScalef(0.5, 2.0, 1.0);
-	glRotatef(90, 0.5, 0, 0);
-	glutWireTeapot(0.6);
+	////추가
+	//glScalef(0.5, 2.0, 1.0);
+	//glRotatef(90, 0.5, 0, 0);
+	//glutWireTeapot(0.6);
 
-	/*glBegin(GL_TRIANGLES);
+	glBegin(GL_TRIANGLES);
 	glColor3f(1.0, 0.0, 0.0);
 	glVertex2f(0.0, 0.5);
 	glColor3f(0.0, 1.0, 0.0);
 	glVertex2f(-0.5, -0.5);
 	glColor3f(0.0, 0.0, 1.0);
 	glVertex2f(0.5, -0.5);
-	glEnd();*/
+	glEnd();
 
 	glFlush();
 }
 
-int main() {
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Geometry Transform");

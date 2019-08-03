@@ -1,7 +1,7 @@
 #include <windows.h>
 #include "opengl/glut.h"
 
-void MyDisplay() {
+void MyDisplay1() {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
@@ -37,7 +37,7 @@ int code0606() {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay1);
 	glutMainLoop();
 	return 0;
 }

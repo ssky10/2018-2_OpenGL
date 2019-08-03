@@ -4,7 +4,7 @@
 static int Day = 0, Time = 0;
 static int vDay = 0, vTime = 0;
 
-void MyDisplay() {
+void MyDisplay2() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
@@ -51,7 +51,7 @@ int code0606_2() {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay2);
 	glutTimerFunc(150, MyTimer, 1);
 	glutMainLoop();
 	return 0;

@@ -115,7 +115,8 @@ void MyReshape(int w, int h) {
 	glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
 }
 
-int main() {
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE | GLUT_DEPTH);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(100, 100);

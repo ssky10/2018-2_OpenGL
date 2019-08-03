@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include "opengl/glut.h"
 
-void MyDisplay() {
+void MyDisplay1() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
 	glDepthMask(GL_FALSE);
@@ -47,7 +47,7 @@ int ImageSynthesis() {
 	glLoadIdentity();
 	//glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
 	glOrtho(-1.0, 1.0, -1.0, 1.0, 1.0, -1.0);
-	glutDisplayFunc(MyDisplay);
+	glutDisplayFunc(MyDisplay1);
 	glutMainLoop();
 	return 0;
 }
