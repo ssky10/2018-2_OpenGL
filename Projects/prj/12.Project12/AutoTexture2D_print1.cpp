@@ -73,11 +73,11 @@ void MyReshape(int w, int h) {
 void MyDisplay2() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glPushMatrix();
-	glRotatef(Rx, 1.0, 0.0, 0.0);
+	glRotated(Rx, 1.0, 0.0, 0.0);
 	glRotated(Ry, 0.0, 1.0, 0.0);
 	glRotated(Rz, 0.0, 0.0, 1.0);
-	glutSolidSphere(1.5, 50, 50);
-	//glutSolidTeapot(1.5);
+	//glutSolidSphere(1.5, 50, 50);
+	glutSolidTeapot(1.5);
 	glPopMatrix();
 	glutSwapBuffers();
 }

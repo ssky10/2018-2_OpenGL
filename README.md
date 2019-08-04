@@ -1,4 +1,6 @@
-# 2018학년도 2학기 OpenGL (수정 중)
+# 2018학년도 2학기 OpenGL
+
+- 수업교재 : [IT CookBook, OpenGL로 배우는 3차원 컴퓨터 그래픽스 - 한빛미디어](http://www.hanbit.co.kr/store/books/look.php?p_code=B1779572378)
 
 ## 00.Hello
    ![image](https://user-images.githubusercontent.com/7812961/62409838-556a2200-b618-11e9-8e87-8db977a1ebb8.png)
@@ -90,5 +92,38 @@
    glLightfv를 이용하여 주변(GL_AMBIENT)/확산(GL_DIFFUSE)/경면광(GL_SPECULAR) 설정
 
 
-# 11.Project11
-   
+## 11.Project11
+   ![p11](https://user-images.githubusercontent.com/7812961/62418299-a7ef2100-b6a0-11e9-8633-316ff82f6bcc.gif)
+
+   조명이 고정되어 있을 때 물체의 위치/각도 와 시점의 위치에 따른 조명의 변화
+
+
+## 12.Project12
+- ### ManualTexture
+   ![image](https://user-images.githubusercontent.com/7812961/62418340-6e6ae580-b6a1-11e9-8fc3-69bafaa1d521.png)
+
+   glTexImage2D함수를 이용해 설정한 표면의 질감(패턴)을 glTexCoord2f함수를 이용해 수동으로 표현
+
+- ### AutoTexture2D
+   ![p12](https://user-images.githubusercontent.com/7812961/62418429-91969480-b6a3-11e9-91e4-bb9b2e8a0817.gif)
+
+   glTexGeni, glTexGenfv, glEnable(GL_TEXTURE_GEN_S) 를 이용하여 표면의 질감표현을 자동으로 적용
+
+
+## 13.FinalProject
+   ![pf](https://user-images.githubusercontent.com/7812961/62418510-08805d00-b6a5-11e9-8ab4-5384e8227a28.gif)
+
+   안드로이드 모양 그래픽을 이용한 승부차기 게임
+
+   (참고자료 : OpenGL로 배우는 3차원 컴퓨터 그래픽스, 한빛미디어 - Project III 투상 변환 및 애니메이션)
+
+    초록 안드로이드가 골대에 있을경우 유저가 선택한 방향은 안드로이드가 이동하는 방향(수비)가 되고, 노란 안드로이드가 골대에 있을경우 유저가 선택한 방향은 공이 이동하는 방향(공격)이다.
+    방향을 먼저 선택한 후 공차기/막기(s)를 입력
+    'q' : 왼쪽 상단
+    'w' : 상단 중앙
+    'e' : 오른쪽 상단
+    'a' : 왼쪽 하단
+    'd' : 오른쪽 하단
+    's' : 공차기/막기
+    'h' : 도움말
+
